@@ -1,61 +1,29 @@
-import react from "react";
-import { NavLink } from "react-router-dom";
-import "../Home.css";
-import { FaCircleInfo } from "react-icons/fa6";
-import { FaHome, FaBriefcaseMedical, FaGraduationCap } from "react-icons/fa";
+import "./Home.css";
+import image from "../assets/headshot.jpg";
+import { GoMail } from "react-icons/go";
+import { FaLinkedinIn } from "react-icons/fa6";
+import { TbLetterD } from "react-icons/tb";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
-    <>
-      <nav>
-        <ul className="nav-list">
-          <li className="nav-list-item">
-            <NavLink
-              className={({ isActive }) =>
-                isActive ? "navlink-active navlink" : "navlink"
-              }
-              to="/home"
-            >
-              <FaHome />
-              <span>Home</span>
-            </NavLink>
-          </li>
-          <li className="nav-list-item">
-            <NavLink
-              className={({ isActive }) =>
-                isActive ? "navlink-active navlink" : "navlink"
-              }
-              to="/about"
-            >
-              <FaCircleInfo />
-              <span>About</span>
-            </NavLink>
-          </li>
-          <li className="nav-list-item">
-            <NavLink
-              className={({ isActive }) =>
-                isActive ? "navlink-active navlink" : "navlink"
-              }
-              to="/experience"
-            >
-              <FaBriefcaseMedical />
-              <span>Experience</span>
-            </NavLink>
-          </li>
-          <li className="nav-list-item">
-            <NavLink
-              className={({ isActive }) =>
-                isActive ? "navlink-active navlink" : "navlink"
-              }
-              to="/education"
-            >
-              <FaGraduationCap />
-              <span>Education</span>
-            </NavLink>
-          </li>
-        </ul>
+    <div className="home-container">
+      {/* TODO: update links with correct profiles */}
+      <nav className="contact-list">
+        <Link className="contact-item" to="laurensemail@creighton.edu">
+          <GoMail />
+          <span>Email</span>
+        </Link>
+        <Link className="contact-item" to="laurenslinkedin.com">
+          <FaLinkedinIn />
+          <span>LinkedIn</span>
+        </Link>
+        <Link className="contact-item" to="laurensdoximity.com">
+          <TbLetterD />
+          <span>Doximity</span>
+        </Link>
       </nav>
-      <h1>Dr. Lauren Walters, MD</h1>
-    </>
+      <img className="headshot" src={image} />
+    </div>
   );
 }

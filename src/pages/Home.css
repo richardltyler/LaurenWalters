@@ -1,0 +1,28 @@
+.contact-item {
+  align-items: center;
+  color: #10050b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.contact-item:visited {
+  color: #10050b;
+}
+
+.contact-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.headshot {
+  border-radius: 1px;
+  width: 100%;
+}
+.home-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  grid-column: 1 / calc(var(--column-count) + 1);
+}

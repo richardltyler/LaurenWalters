@@ -7,9 +7,9 @@
 .App {
   display: grid;
   grid-template-columns: repeat(var(--column-count), 1fr);
-  height: 100%;
-  width: 100%;
   padding: 3rem;
+  row-gap: 1rem;
+  width: 100%;
 }
 
 /* .logo {
