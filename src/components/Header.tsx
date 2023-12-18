@@ -1,7 +1,5 @@
 import { NavLink, Link } from "react-router-dom";
 import "./Header.css";
-import { FaCircleInfo } from "react-icons/fa6";
-import { FaHome, FaBriefcaseMedical, FaGraduationCap } from "react-icons/fa";
 
 export default function Header() {
   return (
@@ -62,49 +60,57 @@ export default function Header() {
       <nav className="nav">
         <ul className="nav-list">
           <li className="nav-list-item">
-            {/* TODO: animate the lines under the links */}
-            <NavLink
-              className={({ isActive }) =>
-                isActive ? "navlink-active navlink" : "navlink"
-              }
-              to="/"
-            >
-              <FaHome />
-              <span>Home</span>
-            </NavLink>
+            <div className="nav-list-item-container">
+              <span className="nav-list-item-count">00</span>
+              {/* TODO: animate the lines under the links */}
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "navlink-active navlink" : "navlink"
+                }
+                to="/"
+              >
+                <span className="nav-list-item-label">Home</span>
+              </NavLink>
+            </div>
           </li>
           <li className="nav-list-item">
-            <NavLink
-              className={({ isActive }) =>
-                isActive ? "navlink-active navlink" : "navlink"
-              }
-              to="/about"
-            >
-              <FaCircleInfo />
-              <span>About</span>
-            </NavLink>
+            <div className="nav-list-item-container">
+              <span className="nav-list-item-count">01</span>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "navlink-active navlink" : "navlink"
+                }
+                to="/about"
+              >
+                <span className="nav-list-item-label">About</span>
+              </NavLink>
+            </div>
           </li>
           <li className="nav-list-item">
-            <NavLink
-              className={({ isActive }) =>
-                isActive ? "navlink-active navlink" : "navlink"
-              }
-              to="/experience"
-            >
-              <FaBriefcaseMedical />
-              <span>Experience</span>
-            </NavLink>
+            <div className="nav-list-item-container">
+              <span className="nav-list-item-count">02</span>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "navlink-active navlink" : "navlink"
+                }
+                to="/experience"
+              >
+                <span className="nav-list-item-label">Experience</span>
+              </NavLink>
+            </div>
           </li>
           <li className="nav-list-item">
-            <NavLink
-              className={({ isActive }) =>
-                isActive ? "navlink-active navlink" : "navlink"
-              }
-              to="/education"
-            >
-              <FaGraduationCap />
-              <span>Education</span>
-            </NavLink>
+            <div className="nav-list-item-container">
+              <span className="nav-list-item-count">03</span>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "navlink-active navlink" : "navlink"
+                }
+                to="/education"
+              >
+                <span className="nav-list-item-label">Education</span>
+              </NavLink>
+            </div>
           </li>
         </ul>
       </nav>
