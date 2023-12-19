@@ -30,7 +30,8 @@
 }
 
 .experience-type-container {
-  display: flex;
+  /* display: flex; */
+  display: block;
   min-height: 100%;
 }
 
@@ -44,17 +45,23 @@
 }
 
 .professional {
+  /* z-index: 0; */
 }
 
 .professional_selected {
   max-width: 100%;
   border-left: 2px solid #10050b;
+  z-index: 100;
 }
 
 .volunteer {
+  z-index: 0;
+  /* display: none; */
+  overflow: hidden;
 }
 
 .volunteer_selected {
   max-width: 100%;
   border-right: 2px solid #10050b;
+  z-index: 100;
 }
