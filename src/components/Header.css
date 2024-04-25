@@ -32,7 +32,6 @@ h1 {
 header {
   display: flex;
   justify-content: space-between;
-  height: 10rem;
   grid-column: 1/ -1;
   gap: 3rem;
   margin-bottom: 2rem;

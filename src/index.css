@@ -27,17 +27,22 @@ html {
 
 body {
   background-image: repeating-linear-gradient(
-    90deg,
+    135deg,
     #f6f6f4,
-    #f6f6f4 3px,
-    #f5ebe0 3px,
-    #f5ebe0 6px
+    #f6f6f4 12px,
+    #f5ebe0 12px,
+    #f5ebe0 24px
   );
   color: #10050b;
   height: 100%;
   margin: 0;
   opacity: 0.9;
   width: 100%;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (min-width: 768px) {

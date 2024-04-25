@@ -111,6 +111,20 @@ export default function Header() {
               <span className="nav-list-item-count">03</span>
             </div>
           </li>
+          <li className="nav-list-item">
+            <div className="nav-list-item-container">
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "navlink-active navlink" : "navlink"
+                }
+                to="/placeholder"
+              >
+                {/* TODO: fix new link name */}
+                <span className="nav-list-item-label">Placeholder</span>
+              </NavLink>
+              <span className="nav-list-item-count">04</span>
+            </div>
+          </li>
         </ul>
       </nav>
     </header>

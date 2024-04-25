@@ -11,13 +11,16 @@ a {
 .App {
   display: grid;
   grid-template-columns: repeat(var(--column-count), 1fr);
+  grid-template-rows: auto 1fr;
   padding: 2rem;
-  row-gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.8);
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
   .App {
-    height: 100%;
-    padding: 4rem;
+    height: 100vh;
+    padding: 4rem 6rem;
+    max-width: 1000px;
   }
 }
