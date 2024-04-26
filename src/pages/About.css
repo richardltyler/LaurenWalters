@@ -1,36 +1,28 @@
 .about {
   grid-column: 1/-1;
 }
-.about-item {
-  border-bottom: 1px solid #10050b;
-  max-height: fit-content;
-}
 
 .about-image {
-  background-image: url("../assets/horsetooth_translucent.png");
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 3s ease-out;
+  padding: 1rem;
 }
 
-.about-image.expanded {
+.about-item {
+  border-bottom: 1px solid #10050b;
   max-height: fit-content;
 }
 
-label {
-  display: flex;
-}
-
-.hidden {
-  display: none;
-}
-
-input {
+h3 {
   margin: 0;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+
+p {
+  font-weight: 400;
 }

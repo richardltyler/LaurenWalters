@@ -5,10 +5,6 @@
   text-rendering: optimizeLegibility;
 }
 
-html {
-  min-height: 100%;
-}
-
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -27,14 +23,13 @@ html {
 
 body {
   background-image: repeating-linear-gradient(
-    135deg,
+    90deg,
     #f6f6f4,
     #f6f6f4 12px,
     #f5ebe0 12px,
     #f5ebe0 24px
   );
   color: #10050b;
-  height: 100%;
   margin: 0;
   opacity: 0.9;
   width: 100%;
@@ -46,8 +41,4 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  html,
-  body {
-    height: 100%;
-  }
 }
