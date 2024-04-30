@@ -61,8 +61,6 @@ export default function Header() {
         <ul className="nav-list">
           <li className="nav-list-item">
             <div className="nav-list-item-container">
-              <span className="nav-list-item-count">00</span>
-              {/* TODO: animate the lines under the links */}
               <NavLink
                 className={({ isActive }) =>
                   isActive ? "navlink-active navlink" : "navlink"
@@ -71,11 +69,11 @@ export default function Header() {
               >
                 <span className="nav-list-item-label">Home</span>
               </NavLink>
+              <span className="nav-list-item-count">00</span>
             </div>
           </li>
           <li className="nav-list-item">
             <div className="nav-list-item-container">
-              <span className="nav-list-item-count">01</span>
               <NavLink
                 className={({ isActive }) =>
                   isActive ? "navlink-active navlink" : "navlink"
@@ -84,11 +82,11 @@ export default function Header() {
               >
                 <span className="nav-list-item-label">About</span>
               </NavLink>
+              <span className="nav-list-item-count">01</span>
             </div>
           </li>
           <li className="nav-list-item">
             <div className="nav-list-item-container">
-              <span className="nav-list-item-count">02</span>
               <NavLink
                 className={({ isActive }) =>
                   isActive ? "navlink-active navlink" : "navlink"
@@ -97,11 +95,11 @@ export default function Header() {
               >
                 <span className="nav-list-item-label">Experience</span>
               </NavLink>
+              <span className="nav-list-item-count">02</span>
             </div>
           </li>
           <li className="nav-list-item">
             <div className="nav-list-item-container">
-              <span className="nav-list-item-count">03</span>
               <NavLink
                 className={({ isActive }) =>
                   isActive ? "navlink-active navlink" : "navlink"
@@ -110,6 +108,21 @@ export default function Header() {
               >
                 <span className="nav-list-item-label">Education</span>
               </NavLink>
+              <span className="nav-list-item-count">03</span>
+            </div>
+          </li>
+          <li className="nav-list-item">
+            <div className="nav-list-item-container">
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "navlink-active navlink" : "navlink"
+                }
+                to="/placeholder"
+              >
+                {/* TODO: fix new link name */}
+                <span className="nav-list-item-label">Placeholder</span>
+              </NavLink>
+              <span className="nav-list-item-count">04</span>
             </div>
           </li>
         </ul>

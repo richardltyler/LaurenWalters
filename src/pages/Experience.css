@@ -1,0 +1,44 @@
+.divider {
+  background: #10050b;
+  height: 2rem;
+  width: 2px;
+}
+
+.experience {
+  grid-column: 1/ -1;
+}
+
+.experience-field {
+  border: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.experience-selector-input {
+  display: none;
+}
+
+.experience-selector-label {
+  text-align: center;
+  transition: all 0.05s linear;
+  width: 25%;
+}
+
+.experience-selector-label_selected {
+  border-bottom: 2px solid #10050b;
+}
+
+.experience-type-container > p {
+  transition: all 3s ease-in-out;
+}
+
+@media screen and (min-width: 768px) {
+  .volunteer_selected {
+    height: 400px;
+  }
+
+  .professional_selected {
+    height: 400px;
+  }
+}

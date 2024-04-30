@@ -1,0 +1,28 @@
+.about {
+  grid-column: 1/-1;
+}
+
+.about-image {
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 1rem;
+}
+
+.about-item {
+  border-bottom: 1px solid #10050b;
+  max-height: fit-content;
+}
+
+h3 {
+  margin: 0;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+
+p {
+  font-weight: 400;
+}
