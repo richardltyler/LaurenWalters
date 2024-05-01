@@ -1,8 +1,8 @@
 import "./About.css";
 import { useCollapse } from "react-collapsed";
-import Horsetooth from "../assets/horsetooth_translucent.png";
-import Reading from "../assets/books_translucent.png";
-import Weights from "../assets/weights_translucent.png";
+import Horsetooth from "../assets/horsetooth_translucent-min.png";
+import Reading from "../assets/books_translucent-min.png";
+import Weights from "../assets/weights_translucent-min.png";
 
 function AboutItem({ title, image }: { title: string; image: string }) {
   const { getCollapseProps, getToggleProps } = useCollapse({});
