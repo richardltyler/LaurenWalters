@@ -6,15 +6,26 @@ article {
   grid-column: 1/-1;
 }
 
-h4 {
-  margin: 0;
+.education h2 {
+  text-decoration: underline;
 }
 
-.navlink {
+.education h3,
+.education h4 {
+  margin: 0;
   padding: 0;
 }
 
-.navlink:visited {
+.education .link {
+  padding: 0;
+  text-decoration: underline;
+}
+
+.education .link:hover {
+  color: #f5ebe0 !important;
+}
+
+.education .link:visited {
   color: #10050b;
 }
 

@@ -1,11 +1,12 @@
 import "./Education.css";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Education() {
   return (
     <div className="education">
+      <h2>Education</h2>
       <article>
-        <h4>Creighton University School of Medicine</h4>
+        <h3>Creighton University School of Medicine</h3>
         <p>Current M4</p>
         <p>Doctor of Medicine, anticipated 2025</p>
         <ul>
@@ -23,14 +24,14 @@ export default function Education() {
           <li>Vital Signs Mentor</li>
           <li>OB/GYN Chief</li>
           <li>
-            <NavLink className="navlink" to="/placeholder">
-              Published x number of times
-            </NavLink>
+            <Link className="link" to="/publications">
+              Published 5 times
+            </Link>
           </li>
         </ul>
       </article>
       <article>
-        <h4>University of Colorado</h4>
+        <h3>University of Colorado</h3>
         <p>BA Integrative Physiology</p>
         <p>Public Health Certificate</p>
         <ul>
