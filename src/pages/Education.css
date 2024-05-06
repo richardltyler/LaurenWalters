@@ -1,0 +1,23 @@
+article {
+  margin-bottom: 1rem;
+}
+
+.education {
+  grid-column: 1/-1;
+}
+
+h4 {
+  margin: 0;
+}
+
+.navlink {
+  padding: 0;
+}
+
+.navlink:visited {
+  color: #10050b;
+}
+
+ul {
+  margin: 0;
+}

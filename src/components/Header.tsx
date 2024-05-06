@@ -132,6 +132,7 @@ export default function Header() {
                 }
                 to="/publications"
               >
+                {/* TODO: fix new link name */}
                 <span className="nav-list-item-label">Publications</span>
               </NavLink>
               <span className="nav-list-item-count">04</span>
