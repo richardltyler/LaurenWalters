@@ -17,7 +17,7 @@
   max-height: fit-content;
 }
 
-h3 {
+.about h3 {
   margin: 0;
   padding: 0.5rem;
   font-size: 1.5rem;
@@ -27,6 +27,6 @@ p {
   font-weight: 400;
 }
 
-h3:hover {
+.about h3:hover {
   cursor: pointer;
 }

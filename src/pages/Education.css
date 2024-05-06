@@ -1,0 +1,34 @@
+article {
+  margin-bottom: 1rem;
+}
+
+.education {
+  grid-column: 1/-1;
+}
+
+.education h2 {
+  text-decoration: underline;
+}
+
+.education h3,
+.education h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.education .link {
+  padding: 0;
+  text-decoration: underline;
+}
+
+.education .link:hover {
+  color: #f5ebe0 !important;
+}
+
+.education .link:visited {
+  color: #10050b;
+}
+
+ul {
+  margin: 0;
+}
