@@ -1,5 +1,5 @@
 import "./App.css";
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import About from "./pages/About";
 import Header from "./components/Header";
 import Experience from "./pages/Experience";
@@ -15,7 +15,8 @@ function App() {
         <Route path="/education" element={<Education />} />
         <Route path="/experience" element={<Experience />} />
         <Route path="/publications" element={<Publications />} />
-        <Route path="/*" element={<>Error</>} />
+        <Route path="/" element={<Navigate to="/home" />} />
+        <Route path="*" element={<>Error</>} />
       </Routes>
     </div>
   );
