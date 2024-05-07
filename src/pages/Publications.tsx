@@ -45,10 +45,15 @@ export default function Publications() {
         <h2>Poster Presentations</h2>
         <ul className="publications-list">
           <li>
-            Walters, L., Gray, Caron, MD, (2024, March).{" "}
-            <cite>Intrahepatic cholestasis of pregnancy.</cite> Online poster
-            and presentation for the 2024 American Liver Foundation Liver Health
-            Poster Competition.
+            <p>
+              Walters, L., Gray, Caron, MD, (2024, March).{" "}
+              <cite>Intrahepatic cholestasis of pregnancy.</cite> Online poster
+              and presentation for the 2024 American Liver Foundation Liver
+              Health Poster Competition.
+            </p>
+            <ul>
+              <li>Rare Diseases category winner</li>
+            </ul>
           </li>
           <li>
             Walters, L., Taylor, A., Dutta, S. MBBS, Huerter, C. MD, (2024,
@@ -57,8 +62,8 @@ export default function Publications() {
               Propylthiouracil induced vasculitis presented like purpura
               fulminans.
             </cite>{" "}
-            Abstract to be presented at the 2024 American College of Physicians
-            Annual Meeting, Boston, MA.
+            Presented at the 2024 American College of Physicians Annual Meeting,
+            Boston, MA.
           </li>
           <li>
             Walters, L., Sidhu, S., Checketts, T.R. DO, Qasswal, M. MD, Mullick,
@@ -86,14 +91,19 @@ export default function Publications() {
         <h2>Oral Presentations</h2>
         <ul className="publications-list">
           <li>
-            Walters, L., Taylor, A., Dutta, S. MBBS, Huerter, C. MD, (2023,
-            October).{" "}
-            <cite>
-              Propylthiouracil induced vasculitis presented like purpura
-              fulminans.
-            </cite>{" "}
-            Abstract presented at the 2023 Nebraska Chapter American College of
-            Physicians Abstract Competition, Omaha, NE.
+            <p>
+              Walters, L., Taylor, A., Dutta, S. MBBS, Huerter, C. MD, (2023,
+              October).{" "}
+              <cite>
+                Propylthiouracil induced vasculitis presented like purpura
+                fulminans.
+              </cite>{" "}
+              Abstract presented at the 2023 Nebraska Chapter American College
+              of Physicians Abstract Competition, Omaha, NE.
+            </p>
+            <ul>
+              <li>Nebraska ACP Chapter winner</li>
+            </ul>
           </li>
 
           <li>
