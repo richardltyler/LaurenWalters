@@ -5,7 +5,7 @@
 .about-nav {
   display: flex;
   align-items: flex-end;
-  height: 7rem;
+  height: 6rem;
 }
 
 .about-nav > a {
@@ -24,11 +24,11 @@
   transition: all 100ms ease-in-out;
 }
 
-.about-nav > a:visited {
+.about-nav a:visited {
   color: #10050b;
 }
 
-.about-nav > a:hover {
+.about-nav a:hover {
   position: relative;
   font-size: 2rem;
   opacity: 1 !important;
@@ -37,4 +37,5 @@
 .nav-text {
   background: white;
   padding: 0 3rem;
+  color: #10050b;
 }
