@@ -53,7 +53,7 @@ export default function About() {
         <Route path="/gym" element={<>gym</>} />
         <Route path="/hiking" element={<>hiking</>} />
         <Route path="/reading" element={<>reading</>} />
-        <Route path="/*" element={<Home />} />
+        <Route path="*" element={<Home />} />
       </Routes>
     </div>
   );
