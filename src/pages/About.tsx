@@ -1,54 +1,60 @@
 import "./About.css";
-import { useCollapse } from "react-collapsed";
-import Horsetooth from "../assets/horsetooth_translucent-min.png";
-import Reading from "../assets/books_translucent-min.png";
-import Weights from "../assets/weights_translucent-min.png";
-
-function AboutItem({ title, image }: { title: string; image: string }) {
-  const { getCollapseProps, getToggleProps } = useCollapse({});
-  return (
-    <div className="about-item">
-      <h3 {...getToggleProps()}>{title}</h3>
-
-      <div {...getCollapseProps()}>
-        <p
-          style={{
-            backgroundImage: `url(${image})`,
-          }}
-          className="about-image"
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dui
-          ante, consequat id faucibus quis, maximus id dui. Maecenas posuere ac
-          leo sed auctor. Maecenas id nisl ac nisi mattis sollicitudin. Nulla
-          quis ex orci. Mauris maximus rhoncus pretium. Nulla consectetur urna
-          ut placerat sagittis. Curabitur faucibus magna sed odio molestie
-          imperdiet. Duis tincidunt eleifend ipsum, in tristique quam vehicula
-          a. Proin eleifend at est sit amet euismod. Donec eget libero nunc.
-          Mauris scelerisque magna ut nunc interdum, eu vulputate nisl
-          dignissim. Pellentesque pellentesque, neque quis tempor luctus, mauris
-          ligula bibendum purus, ut sagittis nulla tellus eget diam. Proin
-          libero lacus, volutpat nec ipsum a, dapibus tempus eros. Proin
-          vehicula dapibus mauris, in interdum nunc ornare sed. Praesent
-          molestie congue purus vitae tempor. Ut et enim nisl. Quisque elementum
-          varius bibendum. Praesent consectetur erat a lacus pellentesque, id
-          aliquam ex tincidunt. Morbi purus lacus, maximus quis volutpat eget,
-          suscipit et nunc. Vivamus tempus id diam volutpat vehicula. Etiam arcu
-          justo, sagittis non fringilla at, laoreet id ligula. Sed in ex sodales
-          lacus ullamcorper consectetur vel in eros. Curabitur malesuada orci
-          eget lorem condimentum, id iaculis purus iaculis. Suspendisse molestie
-          risus leo, ut pulvinar metus mollis et.
-        </p>
-      </div>
-    </div>
-  );
-}
+import Horsetooth from "../assets/horsetooth-unsplash-min.png";
+import Reading from "../assets/reading-unsplash-min.png";
+import Weights from "../assets/weights-unsplash-min.png";
+import { Routes, Route, NavLink, useLocation } from "react-router-dom";
+import Home from "./Home";
 
 export default function About() {
+  const location = useLocation();
+
   return (
     <div className="about">
-      <AboutItem title="Hiking" image={Horsetooth} />
-      <AboutItem title="Reading" image={Reading} />
-      <AboutItem title="Gym" image={Weights} />
+      <nav className="about-nav">
+        <NavLink
+          style={({ isActive }) => {
+            return {
+              height: isActive ? "6rem" : "4rem",
+              backgroundImage: `url(${Horsetooth})`,
+              opacity: !isActive ? "0.7" : "1",
+            };
+          }}
+          to={location.pathname === "/home/hiking" ? "/home" : "/home/hiking"}
+        >
+          <span className="nav-text">Hiking</span>
+        </NavLink>
+        <NavLink
+          style={({ isActive }) => {
+            return {
+              height: isActive ? "6rem" : "4rem",
+              backgroundImage: `url(${Weights})`,
+              opacity: !isActive ? "0.7" : "1",
+            };
+          }}
+          to={location.pathname === "/home/gym" ? "/home" : "/home/gym"}
+        >
+          <span className="nav-text">Gym</span>
+        </NavLink>
+        <NavLink
+          style={({ isActive }) => {
+            return {
+              height: isActive ? "6rem" : "4rem",
+              backgroundImage: `url(${Reading})`,
+              opacity: !isActive ? "0.7" : "1",
+            };
+          }}
+          to={location.pathname === "/home/reading" ? "/home" : "/home/reading"}
+        >
+          <span className="nav-text">Reading</span>
+        </NavLink>
+      </nav>
+
+      <Routes>
+        <Route path="/gym" element={<>gym</>} />
+        <Route path="/hiking" element={<>hiking</>} />
+        <Route path="/reading" element={<>reading</>} />
+        <Route path="*" element={<Home />} />
+      </Routes>
     </div>
   );
 }

@@ -78,10 +78,11 @@ export default function Header() {
                 className={({ isActive }) =>
                   isActive ? "navlink-active navlink" : "navlink"
                 }
-                to="/"
+                to="/home"
               >
-                <span className="nav-list-item-label">Home</span>
+                <span className="nav-list-item-label">About</span>
               </NavLink>
+
               <span className="nav-list-item-count">00</span>
             </div>
           </li>
@@ -91,10 +92,11 @@ export default function Header() {
                 className={({ isActive }) =>
                   isActive ? "navlink-active navlink" : "navlink"
                 }
-                to="/about"
+                to="/education"
               >
-                <span className="nav-list-item-label">About</span>
+                <span className="nav-list-item-label">Education</span>
               </NavLink>
+
               <span className="nav-list-item-count">01</span>
             </div>
           </li>
@@ -111,19 +113,7 @@ export default function Header() {
               <span className="nav-list-item-count">02</span>
             </div>
           </li>
-          <li className="nav-list-item">
-            <div className="nav-list-item-container">
-              <NavLink
-                className={({ isActive }) =>
-                  isActive ? "navlink-active navlink" : "navlink"
-                }
-                to="/education"
-              >
-                <span className="nav-list-item-label">Education</span>
-              </NavLink>
-              <span className="nav-list-item-count">03</span>
-            </div>
-          </li>
+
           <li className="nav-list-item">
             <div className="nav-list-item-container">
               <NavLink
@@ -132,10 +122,10 @@ export default function Header() {
                 }
                 to="/publications"
               >
-                {/* TODO: fix new link name */}
                 <span className="nav-list-item-label">Publications</span>
               </NavLink>
-              <span className="nav-list-item-count">04</span>
+
+              <span className="nav-list-item-count">03</span>
             </div>
           </li>
         </ul>
