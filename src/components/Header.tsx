@@ -78,7 +78,7 @@ export default function Header() {
                 className={({ isActive }) =>
                   isActive ? "navlink-active navlink" : "navlink"
                 }
-                to="/about"
+                to="/home"
               >
                 <span className="nav-list-item-label">About</span>
               </NavLink>

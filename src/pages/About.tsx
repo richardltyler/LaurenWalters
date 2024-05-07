@@ -19,9 +19,7 @@ export default function About() {
               opacity: !isActive ? "0.7" : "1",
             };
           }}
-          to={
-            location.pathname === "/about/hiking" ? "/about" : "/about/hiking"
-          }
+          to={location.pathname === "/home/hiking" ? "/home" : "/home/hiking"}
         >
           <span className="nav-text">Hiking</span>
         </NavLink>
@@ -33,7 +31,7 @@ export default function About() {
               opacity: !isActive ? "0.7" : "1",
             };
           }}
-          to={location.pathname === "/about/gym" ? "/about" : "/about/gym"}
+          to={location.pathname === "/home/gym" ? "/home" : "/home/gym"}
         >
           <span className="nav-text">Gym</span>
         </NavLink>
@@ -45,9 +43,7 @@ export default function About() {
               opacity: !isActive ? "0.7" : "1",
             };
           }}
-          to={
-            location.pathname === "/about/reading" ? "/about" : "/about/reading"
-          }
+          to={location.pathname === "/home/reading" ? "/home" : "/home/reading"}
         >
           <span className="nav-text">Reading</span>
         </NavLink>
